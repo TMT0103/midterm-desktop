@@ -1,4 +1,6 @@
-namespace Bai1
+using System;
+
+namespace midterm_desktop
 {
     partial class Form1
     {
@@ -124,7 +126,7 @@ namespace Bai1
             this.lstThongTinNhanVien.TabIndex = 0;
             this.lstThongTinNhanVien.UseCompatibleStateImageBehavior = false;
             this.lstThongTinNhanVien.View = System.Windows.Forms.View.Details;
-            this.lstThongTinNhanVien.SelectedIndexChanged += new System.EventHandler(this.lvNhanVien_SelectedIndexChanged);
+            this.lstThongTinNhanVien.SelectedIndexChanged += new System.EventHandler(this.lstThongTinNhanVien_SelectedIndexChanged);
             // 
             // MaSo
             // 
@@ -231,6 +233,12 @@ namespace Bai1
 
         }
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            // Close the form when the "Thoát" button is clicked  
+            this.Close();
+        }
+
         #endregion
 
         private System.Windows.Forms.GroupBox grpEmployeeDetails;
@@ -252,4 +260,3 @@ namespace Bai1
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
     }
 }
-
